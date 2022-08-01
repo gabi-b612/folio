@@ -1,0 +1,213 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-position: relative;
+    background: transparent;
+    color: white;
+}
+body::before{
+    content: "";
+    position: fixed;
+    background: #040404 url("../img/bg.jpg") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+/* ======= DETAILS PROFILE ======== */
+.conteneur{
+    background: rgba(0, 0, 0, 0.8);
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 80%;
+    padding: 1px;
+}
+/* -------- LEARN MORE ------ */
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.navbar h1{
+    font-size: 60px;
+}
+.navbar p{
+    font-size: 30px;
+}
+@media (max-width: 700px){
+    .navbar h1{
+        font-size: 40px;
+    }
+    .navbar p{
+        font-size: 15px;
+    }   
+}
+@media (max-width: 520px){
+    .navbar h1{
+        font-size: 30px;
+    }
+    .navbar p{
+        font-size: 15px;
+    }   
+}
+.image{
+    width: 30%;
+    height: 400px;
+    margin: 2px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.content{ 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.det{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 400px;
+    margin: 10px;
+    padding: 2px;
+}
+.det h2{
+    color: #18d26e;
+}
+.det p{
+    text-align: justify;
+}
+.d{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    flex-direction: row;
+    margin-bottom: 2px;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1px;
+    padding: 2px;
+    margin-top: 2px;
+}
+
+@media (max-width : 1070px){
+    .image{
+        width: 60%;
+        margin-left: 18%;
+    }
+    .det{
+        width: 100%;
+    }
+}
+/* ====== Skilles ====== */
+
+.skills .colonne{
+    width: 48%;
+}
+.compe{
+    display: flex;
+    flex-wrap: wrap;
+}
+.comp{
+    margin: 20px;
+}
+/* Un peu de responsive ..... */
+@media (max-width : 1249px){
+    .skills .colonne{
+        margin: 10px;
+        width: 100%;
+    } 
+}
+/* ----- progression ------ */
+
+.bg{
+    background: rgba(255, 255, 255, 0.08);
+}
+.progression1{
+    height: 10px;
+    background-color: #18d26e;
+    width: 70%;
+}
+.progression2{
+    height: 10px;
+    background-color: #18d26e;
+    width: 50%;
+}
+.progression3{
+    height: 10px;
+    background-color: #18d26e;
+    width: 20%;
+}
+.progression4{
+    height: 10px;
+    background-color: #18d26e;
+    width: 40%;
+}
+.progression5{
+    height: 10px;
+    background-color: #18d26e;
+    width: 50%;
+}
+.progression6{
+    height: 10px;
+    background-color: #18d26e;
+    width: 50%;
+}
+.skill p{
+    text-align: right;
+}
+.skill .val {
+    float: right;
+    font-style: normal;
+}
+/* ===== CONTACT ======== */
+.view{
+    display: flex;
+    flex-wrap: wrap;
+}
+.adresse{
+    background: rgba(255, 255, 255, 0.08);
+    margin: 10px;
+    width: 45% ;
+    padding: 10px;
+}
+@media (max-width : 1249px){
+    .adresse{
+        width: 100%;
+    }
+}
+.icon{
+    display: flex;
+}
+.icon img{
+    height: 50px;
+}
+.adresse .info .icon a{
+    padding-right: 20px;
+}
+.icon img:hover{
+    height: 40px;
+    transition: 0.5s;
+    background: white;
+}
+/* ===== Footer ====== */
+footer{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
